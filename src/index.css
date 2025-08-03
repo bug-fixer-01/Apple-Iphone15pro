@@ -35,6 +35,13 @@ canvas {
     @apply text-gray-300
   }
 
+@utility bg-zinc{
+  @apply bg-[#101010]
+}
+
+@utility bg-gray-ap{
+  @apply bg-[#42424570]
+}
 
 @layer utilities {
   .nav-height {
@@ -86,7 +93,7 @@ canvas {
   }
 
   .control-btn {
-    @apply ml-4 p-4 rounded-full bg-[#94928d] backdrop-blur flex-center
+    @apply ml-4 p-4 rounded-full bg-gray-ap backdrop-blur flex-center
   }
 
   .hero-title {
