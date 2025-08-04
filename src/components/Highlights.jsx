@@ -6,8 +6,12 @@ import {playImg, rightImg, watchImg} from '../utils'
 
 const Highlights = () => {
   useGSAP(()=>{
-      gsap.to('#title', {opacity:1, y:0})
-      gsap.to('.link', {opacity:1, y:0 , stagger:0.2 ,duration:1})
+      gsap.to('#title', {opacity:1, y:0 , scrollTrigger: {
+        trigger: '#title'
+      }})
+      gsap.to('.link', {opacity:1, y:0 , stagger:0.2 ,duration:1 , scrollTrigger: {
+        trigger: '.link'
+      }})
   },[])
   return (
     <section id='highlights' className='w-screen h-full overflow-hidden common-padding bg-zinc'>

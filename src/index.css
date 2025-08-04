@@ -53,15 +53,15 @@ canvas {
   }
 
   .color-container {
-    @apply flex items-center justify-center px-4 py-4 rounded-full bg-gray-600 backdrop-blur
+    @apply flex items-center justify-center px-4 py-4 rounded-full bg-gray-ap backdrop-blur
   }
 
   .size-btn-container {
-    @apply flex items-center justify-center p-1 rounded-full bg-gray-600 backdrop-blur ml-3 gap-1
+    @apply flex items-center rounded-full p-1.5 bg-gray-ap backdrop-blur ml-3 gap-1
   }
 
-  .size-btn {
-    @apply w-10 h-10 text-sm flex justify-center items-center bg-white text-black rounded-full transition-all
+  .size-btn{
+    @apply w-10 h-10 rounded-full text-sm flex-center cursor-pointer
   }
 
   .common-padding {

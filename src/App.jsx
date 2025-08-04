@@ -4,6 +4,7 @@ import Hero from './components/Hero'
 import Highlights from './components/Highlights'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/all'
+import Model from './components/Model'
 
 gsap.registerPlugin(ScrollTrigger);
 const App = () => {
@@ -12,6 +13,7 @@ const App = () => {
       <Navbar/>
       <Hero/>
       <Highlights/>
+      <Model/>
    </main>
   )
 }
