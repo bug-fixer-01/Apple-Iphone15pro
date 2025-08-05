@@ -24,10 +24,12 @@ const Model = () => {
   // Model
   const small = useRef(new THREE.Group())
   const large = useRef(new THREE.Group())
+  console.log(small)
 
   //rotation
   const [smallRotation, setSmallRotation] = useState(0)
   const [largeRotation, setLargeRotation] = useState(0)
+  console.log(largeRotation)
 
   const buttonRef = useRef();
   const spanRef = useRef();
@@ -89,10 +91,19 @@ const Model = () => {
               item={Model}
               size={size}
             />
-
-            <Canvas className='w-full h-full fixed top-0 left-0 right-0 overflow-hidden' eventSource={document.getElementById('root')}>
+            <Canvas className='w-full h-full'
+              style={{
+                position: 'fixed',
+                top: 0,
+                bottom: 0,
+                left: 0,
+                right: 0,
+                overflow: 'hidden'
+              }}
+            eventSource={document.getElementById('root')}>
               <View.Port />
             </Canvas>
+          
           </div>
           <div className='bg-black w-full mx-auto'>
             <p className='text-sm font-light text-center mb-5'>{Model.title}</p>

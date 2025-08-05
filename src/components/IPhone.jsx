@@ -29,7 +29,7 @@ function Model(props) {
         }
         material[1].needsUpdate = true;
       });
-    }, [materials, props.item]);
+    }, [materials, props.item ]);
   
   return (
     <group {...props} dispose={null}>
